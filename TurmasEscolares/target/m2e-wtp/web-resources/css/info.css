@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --content-color:  #1a1a1aad;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;    
+    align-content: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.content {
+    width: 70%;
+    height: 450px;
+    background-color: var(--content-color);
+    padding: 20px;
+    position: relative;
+}
+
+    .titulo {
+        text-align: center;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+
+    .show {
+        width: 48%;
+        height: 250px;
+        background-color: white;
+        margin-top: 100px;
+        overflow: auto;
+        padding: 2px;
+    }
+
+    .show-prof {
+        float: left;
+    }
+
+    .show-aluno {
+        float: right;
+    }
+
+    .add {
+        padding: 5px;
+        position: absolute;
+        background-color: green;
+        border: none;
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+        top: 100px;
+    }
+
+    .add_aluno{
+        right: 1rem;
+    }
+
+    .add_prof {
+        left: 1rem;
+    }
+
+    .list_title {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 10px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        border-bottom: solid 1px gray;
+        margin-bottom: 30px;
+    }
+
+    .delete_turma {
+        right: 1rem;
+        position: absolute;
+        border: 0;
+        padding: 5px;
+        color: white;
+        font-size: 20px;
+        background-color: red;
+        cursor: pointer;
+    }
+
+    .item{
+        width: 100%;
+        position: relative;
+        float: left;
+        border-bottom: solid 1px gray;
+    }
+
+        .item_title {
+            float: left;
+            padding-left: 10px;
+            font-family: arial;
+        }
+
+        .delete_item {
+            width: 10px;
+            height: 15px;
+            float: right;
+            padding-right: 10px;
+            background: url('../icon/trash.png') no-repeat center;
+            background-size: 100% 100%;
+            cursor: pointer;
+        }
+
+
+.div-form {
+    position: fixed;
+    width: 0px;
+    height: 100%;
+    background-color: #000000eb;
+    top: 0;
+    right: 0;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+    .close_form {
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 20px;
+        border: none;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        border-radius: 100%;
+        background-color: white;
+        background-image: url('../icon/green-arrow.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 70% 70%;
+    }
+
+.form-save {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    position: relative;
+}
+
+    .form-save button {
+        width: 100px;
+        font-size: 18px;
+        color: white;
+        background-color: green;
+        border: none;
+        padding: 13px;
+        cursor: pointer;
+    }
+
+        .title_form {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .form-save input {
+            width: 200px;
+            padding: 10px;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .label_form {
+            color: white;
+            font-size: 20px;
+        }
+
+        .label_form::after {
+            content: ' *';
+            color: red;
+        }

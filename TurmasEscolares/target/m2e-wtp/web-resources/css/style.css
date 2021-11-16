@@ -1,0 +1,238 @@
+:root {
+    --bar-color: #1a1a1aad;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#center-80 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#center-60 {
+    width: 65%;
+    margin: 0 auto;
+}
+
+/* BAR */
+
+.bar {
+    width: 100%;
+    padding: 7px;
+    position: fixed;
+    background-color: var(--bar-color);
+}
+
+    .main-title {
+        color: white;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+/*  show turmas */
+
+.turma {
+    margin-top: 100px;
+    padding: 10px;
+    border-bottom: solid 1px gray;
+    overflow: hidden;
+}
+
+    .turma-title {
+        float: left;
+    }
+
+    .controller {
+        width: 20px;
+        height: 20px;
+        float: right;
+        margin-left: 10px;
+    }
+
+        .trash {
+            background: url('../icon/trash.png') no-repeat center;
+            background-size: 100% 100%;
+        }
+
+        .edit {
+            background: url('../icon/edit.png') no-repeat center;
+            background-size: 100% 100%;
+        }
+
+
+        .remove-tag{
+            width: 25px;
+            height: 25px;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+            background: url('../icon/trash.png') no-repeat center;
+            background-size: 80% 80%;
+            float: left;
+  
+        }
+
+.btn-novo {
+    position: fixed;
+    left: 1rem;
+    top: 5rem;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    border-radius: 100%;
+    background-image: url('../icon/group.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% 60%;
+    border: solid 2px var(--bar-color);
+    cursor: pointer;
+}
+
+
+.div-form {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 100vh;
+    background-color: var(--bar-color);
+    right: 0;
+    text-align: center;
+    font-family: arial;
+    transition: all 0.2s ease-in-out;
+}
+
+    .close-form {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        margin-top: 20px;
+        margin-left: 20px;
+        cursor: pointer;
+        background: url('../icon/green-arrow.png') no-repeat center;
+        background-size: 60% 60%;
+        background-color: white;
+    }
+
+        .title-form {
+            color: white;
+            margin-top: 40px;
+        }
+
+.form-register {
+    width: 60%;
+    height: 400px;
+    background-color: #1a1a1a;
+    padding: 30px;
+    overflow: auto;
+    position: relative;
+}
+
+    .form-register input {
+        width: 250px;
+        padding: 10px;
+        margin-right: 20px;
+        margin-left: 30px;
+        margin-top: 10px;
+        float: left;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        position: relative;
+    }
+    
+    .title-info {
+        margin-top: 7px;
+        float:left;
+        margin-left: 30px;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+    }
+
+    .title-info::after {
+        content: ' *';
+        color: red;
+    }
+
+    #btn-submit {
+        float: left;
+        margin-top: 20px;
+        margin-left: 30px;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        color: white;
+        background-color: green;
+    }
+
+    /*  novo input */
+    .add-novo {
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        background-color: white;
+        margin-top: 15px;
+        background: url('../icon/plus.png') no-repeat center;
+        background-size: 100% 100%;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    .form-input {
+        width: 700px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .add-input {
+        width: 100%;
+        float: left;
+    }
+
+
+/*  VALIDATIONS  */
+
+
+.error {
+    color: red;
+
+}
+
+#turma_titulo-error, #prof_nome-error, #aluno_nome-error, #materia_titulo-error, #aluno_sobrenome-error {
+    font-size: 15px;
+    position: absolute;
+    left: 0;
+    top: 27px;
+    left: 30px;
+}
+
+
+#aluno_sobrenome-error,  #materia_titulo-error{
+	margin-left: 320px;
+}

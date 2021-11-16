@@ -1,0 +1,10 @@
+com\turma\models\Materia.class
+com\turma\dao\ProfessorDAO.class
+com\turma\dao\TurmaDAO.class
+com\turma\utils\HibernateUtils.class
+com\turma\models\Aluno.class
+com\turma\controller\MainController.class
+com\turma\models\Turma.class
+com\turma\dao\MateriaDAO.class
+com\turma\dao\AlunoDAO.class
+com\turma\models\Professor.class
